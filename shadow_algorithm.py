@@ -24,7 +24,7 @@ random_aggregator = random.choice(['+', '-'])
 
 def generate_base(level):
     if level == 1:
-        return random.randint(10, 100)
+        return random.randint(10, 99)
     if level == 2:
         return random.randint(100, 999)
     if level == 3:
@@ -94,7 +94,7 @@ def play():
         if question == answer:
             print('Right!\n')
             game_over = True
-        #if question == 'debug':
+        #elif question == 'debug':
             #print(answer)
         else:
             print('Wrong')
